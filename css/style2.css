@@ -1,0 +1,242 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+  font-size: 20px;
+  box-sizing: inherit;
+}
+
+*,*:before,*:after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: antiquewhite;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Neometric";
+    /* background-color: #000000; */
+    background-image: url(../img/line.svg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size:cover;
+    -ms-user-select: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    user-select: none; 
+}
+
+.reg{
+  outline: solid 7px rgb(253, 0, 194);
+  outline-style: inset; 
+  outline-offset: 50px;
+  backdrop-filter: blur(9px);
+}
+
+.buy-button {
+    background: #682179;
+    font-family: 'Neometric';
+    box-shadow: 0px 10px 25px rgba(225, 29, 196, 0.4);
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    -webkit-transition: all 1s ease;
+            transition: all 0.8s ease; /* Время изменения цвета */
+}
+
+.buy-button:hover{
+    background-color: #450c49; /* Меняем цвет ссылки */
+}
+
+  .form input{
+     height: 60px;
+     width: 100%;
+     padding: 0 15px;
+     font-size: 17px;
+     margin-bottom: 1.3rem;
+     border: 1px solid #ddd;
+     border-radius: 6px;
+     outline: none;
+  }
+
+  .form input:focus{
+     box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+   }
+
+  .form a{
+    font-size: 16px;
+    color: #009579;
+    text-decoration: none;
+  }
+
+  .form a:hover{
+    text-decoration: underline;
+  }
+
+  .form input.button{
+    color: #fff;
+    background: #009579;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 1.7rem;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .form input.button:hover{
+    background: #006653;
+  }
+
+  .signup{
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .signup label{
+    color: #009579;
+    cursor: pointer;
+  }
+
+  .signup label:hover{
+    text-decoration: underline;
+  }
+
+/*  */
+
+/* Регистрация и вход */
+
+.mb-5 {
+    margin-top:7rem;
+    margin-bottom: 4rem;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.content-index p{
+    color: #fff;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mt-5 {
+    margin-top: 1rem !important;
+  }
+
+label {
+    display: inline-block;
+}
+
+.btn-outline-primary {
+    color: #ffffff;
+    border-color: #682179;
+    box-shadow: 0 0 0 0.15rem rgba(156, 12, 105, 0.5);
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+  
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #682179;
+    border-color: #682179;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+  }
+
+@media screen and (max-width: 1024px) {
+
+}
+
+
+@media screen and (max-width:767px) {
+}
+
+
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 426px){
+    body{
+        background-image: url(../img/fon.png);
+        background-repeat: repeat;
+        background-position: right 35% bottom 45%; 
+    }
+    .btn{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 321px) {
+    .buy-button{
+        font-size: 20px;
+    }
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-45px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
